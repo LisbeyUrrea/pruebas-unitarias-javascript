@@ -21,9 +21,9 @@ function suma(operacion, ...numeros) {
     var tieneElArrayMasDeDosNumeros = numerosOperacion.length > 1;
 
     // creamos la suma, verificando que la cantidad de numeros sea mayor a 1, en caso de serlo devuelve el numero que enviaron
-    const suma = tieneElArrayMasDeDosNumeros ? numerosOperacion.reduce((suma, valor) => suma + valor) : numerosOperacion[0];
+    const suma = tieneElArrayMasDeDosNumeros ? numerosOperacion.reduce((suma, valor) => (typeof valor === 'string') ? suma : suma + valor) : numerosOperacion[0];
     // creamos la multiplicacion, verificando que la cantidad de numeros sea mayor a 1, en caso de serlo devuelve el numero que enviaron
-    const multiplicacion = tieneElArrayMasDeDosNumeros ? numerosOperacion.reduce((numero, valor) => numero * valor) : numerosOperacion[0];
+    const multiplicacion = tieneElArrayMasDeDosNumeros ? numerosOperacion.reduce((multiplicacion, valor) => (typeof valor === 'string') ? multiplicacion : multiplicacion * valor) : numerosOperacion[0];
 
     //Verificamos si el ejercicio nos pedia suma o multiplicacion y devolvemos los ralores requeridos
     return (tipoOperacion === 'S') ? suma : multiplicacion;
