@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Ver si los estilos del body cambiaron 1`] = `"body { background-color: aqua; }"`;
+
+exports[`Ver si mi body cambi 1`] = `"<body> Hola mundo </body>"`;
+
+exports[`hacer pruebas a un objeto javaScrip 1`] = `"{\\"sumaNotas\\":18,\\"nombre\\":\\"Ana\\",\\"clase\\":\\"JavaScrip\\"}"`;
