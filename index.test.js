@@ -1,4 +1,4 @@
-const multiSum = require('./public/index');
+const multiSum = require('./src/index');
 
 test('sumar 2 numeros', () => {
     //arrage
